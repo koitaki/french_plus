@@ -2,6 +2,9 @@
 
 /* Tokens */
 :root {
+  --font-title: Inter, 'Playfair Display', serif;
+  --font-body: Inter, 'Playfair Display', serif;
+  --font-link: 'DM Sans', sans-serif;
   --navy:       #0e1a2e;
   --navy-mid:   #162238;
   --navy-light: #1e3050;
@@ -19,7 +22,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: var(--font-body);
   background: var(--cream);
   color: var(--text);
   min-height: 100vh;
@@ -55,7 +58,7 @@ img { display: block; max-width: 100%; }
   height: 56px;
 }
 .nav-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);
   font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
@@ -69,7 +72,7 @@ img { display: block; max-width: 100%; }
   margin-left: auto;
 }
 .nav-links a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .9rem;
   font-weight: 500;
   color: rgba(255,255,255,.7);
@@ -95,7 +98,7 @@ img { display: block; max-width: 100%; }
   padding: 0 1.5rem;
 }
 .hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: Inter, 'Playfair Display', serif;
   font-size: clamp(2rem, 5vw, 3.2rem);
   color: #fff;
   font-weight: 700;
@@ -105,7 +108,7 @@ img { display: block; max-width: 100%; }
 .hero-plus  { color: var(--gold); }
 .hero-sub {
   margin-top: .85rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: 1.05rem;
   color: rgba(255,255,255,.65);
   max-width: 540px;
@@ -127,13 +130,13 @@ img { display: block; max-width: 100%; }
 }
 .source-icon { width: 28px; height: 28px; object-fit: contain; }
 .source-name {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);;
   font-size: 1.35rem;
   color: var(--navy);
 }
 .source-link {
   margin-left: auto;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .82rem;
   color: var(--text-muted);
   border-bottom: 1px solid var(--cream-dark);
@@ -164,7 +167,7 @@ img { display: block; max-width: 100%; }
   box-shadow: 0 6px 20px rgba(0,0,0,.13);
 }
 .card-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);;
   font-size: 1.05rem;
   line-height: 1.3;
   color: var(--navy);
@@ -176,7 +179,7 @@ img { display: block; max-width: 100%; }
 }
 .card-meta { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: auto; }
 .badge {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .72rem;
   font-weight: 600;
   padding: .2rem .55rem;
@@ -193,7 +196,7 @@ img { display: block; max-width: 100%; }
   padding: 2.5rem 0 2rem;
 }
 .page-hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   color: #fff;
 }
@@ -205,7 +208,7 @@ img { display: block; max-width: 100%; }
   max-width: 740px;
 }
 .about-content h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);;
   font-size: 1.4rem;
   color: var(--navy);
   margin: 2rem 0 .7rem;
@@ -219,7 +222,7 @@ img { display: block; max-width: 100%; }
 .about-content a:hover { color: var(--gold); }
 .about-content em { font-style: italic; }
 .about-content kbd {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .82rem;
   background: var(--cream-dark);
   border: 1px solid #ccc;
@@ -242,7 +245,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   gap: .5rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .8rem;
   color: rgba(255,255,255,.5);
   text-transform: uppercase;
@@ -251,7 +254,7 @@ img { display: block; max-width: 100%; }
 }
 .reader-source-icon { width: 18px; height: 18px; object-fit: contain; }
 .reader-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);;
   font-size: clamp(1.2rem, 3vw, 1.9rem);
   color: #fff;
   line-height: 1.25;
@@ -261,7 +264,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   gap: .4rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .82rem;
   color: rgba(255,255,255,.6);
   transition: color .2s;
@@ -331,7 +334,7 @@ img { display: block; max-width: 100%; }
   border-bottom: 1px solid var(--cream-dark);
 }
 .font-control {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .85rem;
   color: var(--text-muted);
   display: flex;
@@ -349,7 +352,7 @@ img { display: block; max-width: 100%; }
 }
 .font-control button:hover { background: var(--gold-light); }
 .col-toggle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .85rem;
   color: var(--text-muted);
   display: flex;
@@ -370,7 +373,7 @@ img { display: block; max-width: 100%; }
   font-size: 1rem;
 }
 .reader-table thead th {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -392,18 +395,18 @@ img { display: block; max-width: 100%; }
 }
 .cell-fr { font-weight: 400; }
 .cell-en { color: var(--text-muted); font-style: italic; }
-.cell-notes { font-family: 'DM Sans', sans-serif; font-size: .82rem; color: var(--text-muted); }
+.cell-notes { font-family: var(--font-link); font-size: .82rem; color: var(--text-muted); }
 
 .text-row.clickable { cursor: pointer; }
 .text-row.clickable:hover td { background: rgba(201,168,76,.08); }
-.text-row.active td { background: rgba(201,168,76,.18); }
+.text-row.active td { background: rgba(201,168,76,.18); font-weight: 600;}
 
 /* Section headings inside table */
 .section-heading-row td {
   padding: 1.4rem .75rem .4rem;
 }
 .section-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);;
   font-size: 1.15rem;
   color: var(--navy);
   border-bottom: 2px solid var(--gold);
@@ -424,13 +427,13 @@ img { display: block; max-width: 100%; }
   flex-wrap: wrap;
 }
 .footer-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-title);;
   font-size: 1.1rem;
   color: #fff;
 }
 .footer-plus { color: var(--gold); }
 .footer-tagline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-link);
   font-size: .8rem;
   color: rgba(255,255,255,.4);
   font-style: italic;
